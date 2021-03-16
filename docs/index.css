@@ -89,6 +89,7 @@ nav a {
 }
 
 main {
+    margin-top: 4rem;
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -97,3 +98,44 @@ main {
 footer {
     text-align: center;
 }
+
+/**
+ * Card Start
+ */
+.card {
+    clear: both;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.card-heading {
+    text-align: center;
+}
+
+.card-right img {
+    float: right;
+    padding-left: 1rem;
+}
+
+.card-left img {
+    float: left;
+    padding-right: 1rem;
+}
+
+@media (max-width: 50rem) {
+    .card-left img {
+        float: none;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+    }
+    .card-right img {
+        float: none;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+    }
+}
+/**
+ * Card End
+ */
