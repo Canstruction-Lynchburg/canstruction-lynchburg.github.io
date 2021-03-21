@@ -20,6 +20,7 @@
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1280" />
     <meta property="og:image:height" content="640" />
+    <script defer src="./index.js"></script>
     <script defer src="./fontawesome/js/all.min.js"></script>
 </head>
 
@@ -27,15 +28,17 @@
     <nav>
         <div class="container">
             <a class="logo" href="/"><img src="canstruction.png" alt=""/></a>
+            <span class="nav-expand-button" onclick="canstruction.toggleMenu()">
+                <i class="fas fa-bars fa-2x"></i>
+            </span>
 
-            <div class="nav-options">
+            <div class="nav-options collapsed">
                 <ul>
                     <li><a href="about">About Us</a></li>
                     <li><a href="what-we-do">What We Do</a></li>
                     <li><a href="rules-and-regulations">Rules and Regulations</a></li>
                     <li><a href="get-involved">Get Involved</a></li>
                 </ul>
-                <span class="nav-expand-button"><i class="fas fa-bars fa-2x"></i></span>
             </div>
         </div>
     </nav>
