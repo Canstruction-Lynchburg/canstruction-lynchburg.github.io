@@ -32,8 +32,7 @@ nav .logo img {
 
 nav .nav-options {
     display: block;
-    width: 100%;
-    padding: 1.25rem 0 0;
+    padding: 1.25rem 1.25rem 0 0;
     float: right;
 }
 
@@ -60,13 +59,19 @@ nav .nav-options {
 }
 
 @media (max-width: 50rem) {
+    nav .nav-options {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
     .nav-options.collapsed {
         display: none;
         visibility: hidden;
     }
     .nav-options li {
         display: block;
-        margin: 0 2rem 0 0;
+        margin: 0;
+        padding: 0.25rem 0;
     }
     .nav-expand-button {
         visibility: visible;
